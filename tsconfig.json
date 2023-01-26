@@ -8,7 +8,15 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
-		"strict": true
+		"strict": true,
+		"paths": {
+			"$lib": ["src/lib"],
+			"$lib/*": ["src/lib/*"],
+			"$stores": ["src/stores/index.ts"],
+			"$stores/*": ["src/stores/*"],
+			"$models": ["src/lib/models/index.ts"],
+			"$models/*": ["src/lib/models/*"],
+		}
 	}
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	//
